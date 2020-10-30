@@ -7,13 +7,11 @@ export default function App() {
   const [secondValue, setSecondValue] = useState('')
   const [result, setResult] = useState(0)
   const [data, setData] = useState([])
-  //const [id, setId] = useState(0)
 
   const sum = () => {
     const sum = parseInt(firstValue) + parseInt(secondValue)
     //console.log(sum)
     setResult(sum)
-    //setId(id + 1)
     setData([...data, {text: `${firstValue} + ${secondValue} = ${sum}`}])
   }
 
@@ -21,7 +19,6 @@ export default function App() {
     const sub = parseInt(firstValue) - parseInt(secondValue)
     //console.log(sub)
     setResult(sub)
-    //setId(id + 1)
     setData([...data, {text: `${firstValue} - ${secondValue} = ${sub}`}])
   }
 
