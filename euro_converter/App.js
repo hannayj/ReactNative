@@ -49,7 +49,7 @@ export default function App() {
           onPress={showEuros}
         />
       </View>
-
+      <Text style={{marginTop: 5}}>Choose your currency:</Text>
       <Picker
         selectedValue={selectedCurrency}
         style={{ height: 50, width: 100, textAlign: 'right' }}
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-start',
     justifyContent: 'space-around',
-    marginTop: 20
+    marginTop: 10
   },
   input: {
     width: 50,
