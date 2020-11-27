@@ -11,7 +11,7 @@ function calculatorScreen({ navigation }) {
   const [secondValue, setSecondValue] = useState('')
   const [result, setResult] = useState(0)
   const [data, setData] = useState([])
-  const initialFocus = useState(null)
+  const initialFocus = useRef(null)
 
   const sum = () => {
     const sum = Number(firstValue) + Number(secondValue)
